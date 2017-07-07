@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="form-group has-success has-feedback">
+  <label class="control-label" for="inputSuccess2">Input with success</label>
+  <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  <span id="inputSuccess2Status" class="sr-only">(success)</span>
+</div>
+<div class="form-group has-warning has-feedback">
+  <label class="control-label" for="inputWarning2">Input with warning</label>
+  <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+  <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+  <span id="inputWarning2Status" class="sr-only">(warning)</span>
+</div>
+<div class="form-group has-error has-feedback">
+  <label class="control-label" for="inputError2">Input with error</label>
+  <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+  <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+  <span id="inputError2Status" class="sr-only">(error)</span>
+</div>
+<div class="form-group has-success has-feedback">
+  <label class="control-label" for="inputGroupSuccess1">Input group with success</label>
+  <div class="input-group">
+    <span class="input-group-addon">@</span>
+    <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+  </div>
+  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+</div>
+	
+	
+	<!-- Standard button -->
+<button type="button" class="btn btn-default">（默认样式）Default</button>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary">（首选项）Primary</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">（成功）Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-info">（一般信息）Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn-warning">（警告）Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger">（危险）Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn-link">（链接）Link</button>
+
+<button type="button" class="btn btn-lg btn-primary" disabled="disabled">Primary button</button>
+<button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+<p class="text-muted">...Indicates a dangerous or potentially negative action</p>
+<p class="text-primary">...Indicates a dangerous or potentially negative action</p>
+<p class="text-success">...Indicates a dangerous or potentially negative action</p>
+<p class="text-info">...Indicates a dangerous or potentially negative action</p>
+<p class="text-warning">...Indicates a dangerous or potentially negative action</p>
+<p class="text-danger">...Indicates a dangerous or potentially negative action</p>
+<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<div style="width:500px;height:500px;border:1px solid red;">
+	<div style="width:100px;height:100px;border:1px solid blue;">1</div>
+	<div style="width:100px;height:100px;border:1px solid blue;display: none;">2</div>
+	<div style="width:100px;height:100px;border:1px solid blue;">3</div>
+</div>
+<h1 class="text-hide">Custom heading</h1>
+<!-- 扬声器_speaker79.svg -->
+<img src="./images/alarm30.svg" width="300" height="100" style="background-color:red;" class="img-responsive img-circle" alt="Responsive image">
+<embed src="./images/alarm30.svg" width="300" height="100" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />
+<object data="./images/alarm30.svg" width="300" height="100" type="image/svg+xml" codebase="http://www.adobe.com/svg/viewer/install/" />
+<iframe src="./images/alarm30.svg" width="300" height="100"></iframe>
+<script>
+
+var Bar = [],Car = [0,1,2,3,4];
+
+function A(arr2){
+	/*	
+		var arr1,arr2;
+		
+		arr1 = Bar;
+		arr2 = Car;
+		
+		
+	*/
+	return arr2.slice(0,3);
+	
+};
+
+Bar = A(Car);
+
+console.log(Bar); //[]
+
+</script>
+</body>
+</html>
